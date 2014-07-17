@@ -12,7 +12,7 @@
 
 CLogUploader	gLogUploader;
 
-//static	const char*	gDomainBaseUrl= "/conection/vrzapi/";
+//static	const char*	gDomainBaseUrl= "/conection/api/";
 //static	int		gDomainPort   = 443;
 //static	bool		gDomainUseSSL = true;
 // see CLogUploader::Start for dev mode override

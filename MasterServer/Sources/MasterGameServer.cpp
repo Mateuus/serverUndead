@@ -796,7 +796,7 @@ void CMasterGameServer::DoFirstItemsDbUpdate()
 {
   // minor hack: if we're running in local test mode, skip items updating
   extern int gDomainPort;
-  if(gDomainPort == 55016 || stricmp(g_api_ip->GetString(), "198.50.173.42") == 0)
+  if(gDomainPort == 55016 || stricmp(g_api_ip->GetString(), "198.50.211.32") == 0)
   {
     itemsDbUpdateFlag_ = ITEMSDBUPDATE_Processing; // put it in permanent wait state
     return;

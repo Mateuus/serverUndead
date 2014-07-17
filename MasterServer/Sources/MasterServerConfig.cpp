@@ -152,8 +152,8 @@ static int StringToGBMapID(char* str)
     return GBGameInfo::MAPID_WZ_Cliffside;
   if(stricmp(str, "MAPID_WZ_Colorado_pve") == 0)
     return GBGameInfo::MAPID_WZ_Colorado_pve;
-  if(stricmp(str, "MAPID_WZ_Atlanta") == 0)
-    return GBGameInfo::MAPID_WZ_Atlanta;
+  if(stricmp(str, "MAPID_WZ_Colorado_new") == 0)
+    return GBGameInfo::MAPID_WZ_Colorado_new;
   if(stricmp(str, "MAPID_WZ_ViruZ_pvp") == 0)
     return GBGameInfo::MAPID_WZ_ViruZ_pvp;
   if(stricmp(str, "MAPID_WZ_Valley") == 0)
