@@ -1507,16 +1507,16 @@ void ServerGameLogic::GetStartSpawnPosition(const wiCharDataFull& loadout, r3dPo
 	} 
 	
 	// alive at current map
-	if(loadout.GameMapId && (loadout.GameMapId == ginfo_.mapId) && loadout.Alive == 1)
+/*	if(loadout.GameMapId && (loadout.GameMapId == ginfo_.mapId) && loadout.Alive == 1)
 	{
 		*pos = loadout.GamePos;
 		*dir = loadout.GameDir;
-		//r3dOutToLog("alive at position %f %f %f\n", pos->x, pos->y, pos->z);
+		//r3dOutToLog("alive at position %f %f %f\n", pos->x, pos->y, pos->z);  //Mateus Spawn
 		return;
-	}
+	}*/
 	
 	// revived (alive == 2) - spawn to closest spawn point
-	if(loadout.GameMapId && loadout.Alive == 2)
+	if(loadout.GameMapId &&  loadout.Alive == 1 || loadout.Alive == 2)
 	{
 		GetSpawnPositionAfterDeath(loadout.GamePos, pos, dir);
 		// move spawn pos at radius

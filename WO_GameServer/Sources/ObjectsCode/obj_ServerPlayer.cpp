@@ -744,7 +744,7 @@ BOOL obj_ServerPlayer::Update()
 
 			float dist = hit.distance;
 			//r3dOutToLog("@@@@ dist=%.2f\n", dist);
-			if(dist > 8.0f) // higher than 1.6 meter above ground
+			if(dist > 9.0f) // higher than 1.6 meter above ground
 			{
 				// check if he is not falling, with some safe margin in case if he is walking down the hill
 				if( (oldstate.Position.y - GetPosition().y) < 0.1f )

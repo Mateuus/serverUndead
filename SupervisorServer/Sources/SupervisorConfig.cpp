@@ -39,7 +39,7 @@ CSupervisorConfig::CSupervisorConfig()
   // enable upload logs by default, it can be disabled by setting it to 0
   uploadLogs_ = r3dReadCFG_I(configFile, group, "uploadLogs", 1);
 
-  webAPIDomainIP_ = r3dReadCFG_S(configFile, group, "webAPIDomainIP", "198.50.211.32");
+  webAPIDomainIP_ = r3dReadCFG_S(configFile, group, "webAPIDomainIP", "127.0.0.1");
   webAPIDomainBaseURL_ = r3dReadCFG_S(configFile, group, "webAPIDomainBaseURL", "/conection/api/");
   webAPIDomainPort_ = r3dReadCFG_I(configFile, group, "webAPIDomainPort", 443);
   webAPIDomainUseSSL_ = r3dReadCFG_I(configFile, group, "webAPIDomainUseSSL", 1) ? true : false;

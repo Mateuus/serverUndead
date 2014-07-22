@@ -1505,7 +1505,15 @@ bool obj_Zombie::ApplyDamage(GameObject* fromObj, float damage, int bodyPart, ST
 			if(fromObj->Class->Name == "obj_ServerPlayer")
 			{
 				obj_ServerPlayer* plr = (obj_ServerPlayer*)fromObj;
-				gServerLogic.AddPlayerReward(plr, RWD_ZombieKill);
+				//gServerLogic.AddPlayerReward(plr, RWD_ZombieKill);
+				if(plr->profile_.ProfileData.AccountType == 5)
+                {
+	               gServerLogic.AddPlayerReward(plr, RWD_ZombieKillP);
+                }
+                else
+                {
+	              gServerLogic.AddPlayerReward(plr, RWD_ZombieKill);
+                }
 			}
 
 			return true;
